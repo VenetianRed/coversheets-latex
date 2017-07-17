@@ -1,0 +1,39 @@
+% Preamble
+% ---
+\documentclass[12pt]{article}
+
+% Packages
+% ---  
+\usepackage[a4paper, left=25 mm, right=25 mm, top=20 mm, bottom=20 mm]{geometry} % A4 size
+\usepackage{amsmath}           % Advanced math typesetting
+\usepackage{amssymb}           % Advanced math symbols
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{lmodern}
+\usepackage[ngerman,english]{babel}    % Change hyphenation rules
+\usepackage{hyperref}          % Add a link to your document
+\usepackage{graphicx}          % Add pictures to your document
+\usepackage{listings}          % Source code formatting and highlighting
+\usepackage{tabularx}          % Table environment for stretched tables
+\usepackage{textgreek}         % Greek characters
+
+% Specify paths so that the punter doesn't have to
+\def\input@path{ {/usr/share/eprints3/archives/mims3/cfg/static/texmf/} }
+\graphicspath{ {/usr/share/eprints3/archives/mims3/cfg/static/images/} }
+
+\usepackage{MIMS_EPrint}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\def\baselinestretch{1}\large\normalsize
+
+\begin{titlepage}
+\frontbox%
+{\#\#title\#\#}% Title
+{\#\#creators\#\#}% Authors
+{\#\#date\#\#}% Date
+{\#\#MIMS_num\#\#}% MIMS number
+\end{titlepage}
+
+\end{document}
